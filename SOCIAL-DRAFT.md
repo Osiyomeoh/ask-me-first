@@ -1,6 +1,6 @@
 # X thread (Sam posts it)
 
-Before posting, confirm the sponsor handles on their official pages and replace [FILL @tatum] and [FILL @walrus]. Add the Medium link to post 4 once the blog is live.
+Handles checked on tatum.io and walrus.xyz (Nov 8).
 
 ## 1/4
 
@@ -24,6 +24,6 @@ In a month I scripted (30 requests), a simple spending cap made 9 wrong payments
 
 Live demo: https://d2en8yo5nec3eh.cloudfront.net/judge
 Code: https://github.com/Osiyomeoh/ask-me-first
-Write-up: [FILL Medium link]
+Write-up: https://medium.com/@samuelaleonomoh5/an-agent-that-pays-mums-bills-and-asks-before-anything-unusual-cf9fc6042fe3
 
-#TotalRecall [FILL @tatum] [FILL @walrus]
+#TotalRecall @tatum_io @WalrusProtocol

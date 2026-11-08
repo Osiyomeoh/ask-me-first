@@ -71,6 +71,6 @@ export function decide(req, recalled, chain) {
   }
 
   if (reasons.length) return out("ASK");
-  reasons.push(`Same wallet you approved${payee.rec.label ? ` (${payee.rec.label})` : ""}, within what you've said is normal.`);
+  reasons.push(`Same wallet you approved${payee.rec.label ? `: ${payee.rec.label}` : ""}. Within what you've said is normal.`);
   return out("PAY");
 }

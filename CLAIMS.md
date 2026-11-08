@@ -12,7 +12,7 @@ Every number or claim used in the README, blog, video or form must appear here w
 | Real Testnet USDC payments made by the agent | 6 USDC `EW1LSgrA…w6hs`, 3 USDC `3LVa8sof…Ubgd`, 3 USDC `FEhuH2ef…zjiM` | same file |
 | Request time, live | Decisions with no write: 2.1–2.4 s; with a payment and Walrus write: 32–48 s | same file |
 | Replay, 30 scripted requests (20 good, 10 bad), simulated with the same decision code | Ask Me First: 0 wrong payments, 13 questions. Memory off: 0 wrong, 23 questions. Auto-pay under 10 cap: 9 wrong (62 USDC), 1 question. Cap + approved list: 3 wrong (27 USDC), 10 questions | `proof/replay-2026-11-08T08-31-54-409Z.json`, `scripts/replay.mjs`. We wrote the script, so say so; the cap policies model the common pattern, not a named product |
-| Number of Mainnet memories written | [FILL: count from `listMemories`] | — |
+| Number of Mainnet memories written | 15 in total on 8 Nov 2026 (7 in the judge-run namespace `demo-1108-0908`: 2 seeds + 5 written in the run) | `proof/memory-count-2026-11-08T09-33-59-205Z.json`, from `scripts/count-memories.mjs` (`listMemories`) |
 
 ## Honest limits (say these)
 - Payments settle on Sui **Testnet**; memory and checks are Mainnet.

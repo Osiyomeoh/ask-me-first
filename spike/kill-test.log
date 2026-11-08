@@ -1,0 +1,4 @@
+write_ms 17354 blob_id gYDVS1bjt5-oApsm02Ua2QHpFb-5wX2SHXRliugscK8
+{ recall_after_write_ms: 1730, tries: 1, distance: 0.4740520456259446 }
+tatum_status 404 checkpoint undefined
+{ tatum_grpc_ms: 513, chain: 'mainnet', checkpoint: '342711838' }

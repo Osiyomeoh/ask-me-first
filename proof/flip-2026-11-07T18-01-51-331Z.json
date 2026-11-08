@@ -1,0 +1,63 @@
+{
+  "run": "flip-2026-11-07T18-01-51-331Z",
+  "network_for_chain_checks": "testnet",
+  "walrus": "mainnet",
+  "rule_recall_polls": 0,
+  "flipped": true,
+  "steps": [
+    {
+      "name": "Ngozi approves Bisi's wallet",
+      "ms": 20683,
+      "blob_id": "M1O8f9P_FWHL-_45gEjDdafxEzm-gFBZDxQLZZF9Slc"
+    },
+    {
+      "name": "Earlier diesel payment on record",
+      "ms": 20507,
+      "blob_id": "7DAMs3ruYQVfg_bVvJKNa6eGObgyc9Mugoabx9kyXnw"
+    },
+    {
+      "name": "Monday: 'Diesel 40 USDC'",
+      "ms": 23274,
+      "decision": "PAY",
+      "reasons": [
+        "Same wallet you approved (Bisi (carer)), within what you've said is normal."
+      ],
+      "cited": [
+        "M1O8f9P_FWHL-_45gEjDdafxEzm-gFBZDxQLZZF9Slc",
+        "7DAMs3ruYQVfg_bVvJKNa6eGObgyc9Mugoabx9kyXnw"
+      ],
+      "chain": {
+        "address": "0xb1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1",
+        "txCount": 0,
+        "capped": false,
+        "name": null,
+        "ms": 995
+      },
+      "wrote": "-OIaekubJ1lVzx_9_HWM3YFZV5A355oleQoUoJ7jFV8"
+    },
+    {
+      "name": "Ngozi: 'too high, never over 25'",
+      "ms": 20246,
+      "blob_id": "BdkatBh9B6Bv9-M-lq_QLkEHfE3G9Ed2Ia8zfRQUYq8"
+    },
+    {
+      "name": "Same request again",
+      "ms": 1750,
+      "decision": "ASK",
+      "reasons": [
+        "40 USDC is over your limit for diesel (25): \"Too high. Diesel for Mum's generator is never more than 25 USDC.\""
+      ],
+      "cited": [
+        "M1O8f9P_FWHL-_45gEjDdafxEzm-gFBZDxQLZZF9Slc",
+        "BdkatBh9B6Bv9-M-lq_QLkEHfE3G9Ed2Ia8zfRQUYq8"
+      ],
+      "chain": {
+        "address": "0xb1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1",
+        "txCount": 0,
+        "capped": false,
+        "name": null,
+        "ms": 373
+      }
+    }
+  ]
+}

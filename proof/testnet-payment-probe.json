@@ -1,0 +1,13 @@
+{
+ "network": "testnet",
+ "simulated": {
+  "ok": true,
+  "ms": 973,
+  "error": null
+ },
+ "sent": true,
+ "request": "probe-1",
+ "digest": "6MfCxFpZKWAAvMEAq4464cV2YouNAPmktiwmAjaz5dPX",
+ "success": true,
+ "explorer": "https://suiscan.xyz/testnet/tx/6MfCxFpZKWAAvMEAq4464cV2YouNAPmktiwmAjaz5dPX"
+}

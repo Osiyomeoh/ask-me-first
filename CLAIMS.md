@@ -11,7 +11,7 @@ Every number or claim used in the README, blog, video or form must appear here w
 | Full judge path live (fresh Mainnet namespace `demo-1108-0908`, Tatum Mainnet gRPC checks, Testnet USDC): 8/8 steps as expected | PAY → limit 5 → ASK → new pharmacy ASK → approve + pay → PAY → injection ASK → checks off ASK "No money moved" | `proof/live-judge-2026-11-08T08-11-58-207Z.json` |
 | Real Testnet USDC payments made by the agent | 6 USDC `EW1LSgrA…w6hs`, 3 USDC `3LVa8sof…Ubgd`, 3 USDC `FEhuH2ef…zjiM` | same file |
 | Request time, live | Decisions with no write: 2.1–2.4 s; with a payment and Walrus write: 32–48 s | same file |
-| Memory on vs off: wrong payments in the replay | [FILL: from replay run] | — |
+| Replay, 30 scripted requests (20 good, 10 bad), simulated with the same decision code | Ask Me First: 0 wrong payments, 13 questions. Memory off: 0 wrong, 23 questions. Auto-pay under 10 cap: 9 wrong (62 USDC), 1 question. Cap + approved list: 3 wrong (27 USDC), 10 questions | `proof/replay-2026-11-08T08-31-54-409Z.json`, `scripts/replay.mjs`. We wrote the script, so say so; the cap policies model the common pattern, not a named product |
 | Number of Mainnet memories written | [FILL: count from `listMemories`] | — |
 
 ## Honest limits (say these)

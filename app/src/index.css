@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  --color-ink: #0b1220;
+  --color-brand: #b3471f;
+  --color-brand-deep: #8a3416;
+  --color-paper: #f7f3ec;
+  --color-brand-soft: #f7e6dc;
+  --color-pay: #047857;
+  --color-ask: #b45309;
+  --color-block: #b91c1c;
+}
+
+html { scroll-behavior: smooth; }
+body { @apply bg-paper text-ink antialiased; }
+.dark body, body.dark { @apply bg-[#0a0d14] text-slate-100; }
+
+@layer components {
+  .glass { @apply bg-white/70 backdrop-blur-xl border border-white/60 shadow-[0_8px_30px_rgba(15,23,42,0.08)]; }
+  .card { @apply bg-white rounded-2xl border border-stone-200/80 shadow-[0_1px_2px_rgba(15,23,42,0.04),0_8px_24px_rgba(15,23,42,0.06)]; }
+  .chip { @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition active:scale-[.98] disabled:opacity-50 disabled:cursor-progress; }
+  .btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition active:scale-[.98] disabled:opacity-50 disabled:cursor-progress bg-ink text-white hover:bg-slate-800; }
+  .btn-brand { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition active:scale-[.98] disabled:opacity-50 disabled:cursor-progress bg-brand text-white hover:bg-brand-deep shadow-lg shadow-brand/25; }
+  .btn-ghost { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition active:scale-[.98] disabled:opacity-50 disabled:cursor-progress bg-white border border-stone-200 text-ink hover:bg-stone-50; }
+  .mono { @apply font-mono text-[12px]; }
+}
+
+/* Keyboard focus: always visible, never on mouse click. */
+:where(a, button, input, textarea, summary, [tabindex]):focus-visible { outline: 2px solid var(--color-brand); outline-offset: 2px; border-radius: 8px; }
+::selection { background: var(--color-brand-soft); }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }

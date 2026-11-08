@@ -1,6 +1,7 @@
 // Ask Me First web server. `npm start` (live if keys are in .env, otherwise sample mode).
 import http from "node:http";
-import { readFileSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
+import { extname } from "node:path";
 import { makeAgent } from "./src/agent.js";
 import { storeFromEnv } from "./src/memory.js";
 import { SEED } from "./src/seed.js";
@@ -65,13 +66,25 @@ const routes = {
   "POST /api/chain": async ({ on }) => { state.chainOn = !!on; return { chainOn: state.chainOn }; },
 };
 
-const pages = { "/": "web/index.html", "/judge": "web/index.html", "/proof": "web/index.html" };
+// Serve the React build (app/dist) when it exists; otherwise the plain web/index.html.
+const APP = existsSync("app/dist/index.html");
+const shell = APP ? "app/dist/index.html" : "web/index.html";
+const pages = { "/": shell, "/app": shell, "/judge": shell, "/proof": shell };
+const TYPES = { ".js": "text/javascript", ".css": "text/css", ".svg": "image/svg+xml", ".png": "image/png", ".ico": "image/x-icon" };
+function asset(pathname) {
+  if (!APP || !pathname.startsWith("/assets/") || pathname.includes("..")) return null;
+  const f = `app/dist${pathname}`;
+  return existsSync(f) ? f : null;
+}
 
 http.createServer(async (req, res) => {
   const url = new URL(req.url, "http://x");
   const key = `${req.method} ${url.pathname}`;
   try {
     if (routes[key]) return json(res, 200, await routes[key](req.method === "POST" ? await body(req) : {}));
+    const a = asset(url.pathname);
+    if (a) { res.writeHead(200, { "content-type": TYPES[extname(a)] || "application/octet-stream", "cache-control": "public, max-age=31536000, immutable" }); return res.end(readFileSync(a)); }
+    if (pages[url.pathname.replace(/\/$/, "") || "/"]) { url.pathname = url.pathname.replace(/\/$/, "") || "/"; }
     if (pages[url.pathname]) { res.writeHead(200, { "content-type": "text/html; charset=utf-8" }); return res.end(readFileSync(pages[url.pathname])); }
     json(res, 404, { error: "not found" });
   } catch (e) {

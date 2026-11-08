@@ -1,0 +1,123 @@
+1
+00:00:00,400 --> 00:00:02,581
+Ngozi is a nurse in Manchester.
+
+2
+00:00:02,581 --> 00:00:06,592
+Her mother lives in Lagos, looked after by a carer, Bisi.
+
+3
+00:00:06,592 --> 00:00:14,403
+Ngozi pays for the diesel, the medicine, and the odd emergency, usually from a hospital ward, between patients.
+
+4
+00:00:14,403 --> 00:00:18,343
+Ngozi is a composite character, but the problem is real.
+
+5
+00:00:18,343 --> 00:00:24,746
+A flat spending limit either blocks what Mum really needs, or lets a scam straight through.
+
+6
+00:00:25,933 --> 00:00:35,189
+Ask Me First is an agent that pays the usual bills, asks about anything unusual, and remembers every answer on Walrus Memory, on Mainnet.
+
+7
+00:00:35,189 --> 00:00:37,959
+So it never asks the same question twice.
+
+8
+00:00:38,967 --> 00:00:40,671
+This is the live app.
+
+9
+00:00:40,671 --> 00:00:47,811
+Memory on Walrus Mainnet, wallet checks through Tatum's Sui gRPC, and real Testnet USDC.
+
+10
+00:00:47,811 --> 00:00:50,326
+Bisi asks for diesel, six USDC.
+
+11
+00:00:50,326 --> 00:00:56,817
+The agent recalls that Ngozi approved Bisi, and that diesel cost six last month.
+
+12
+00:00:56,817 --> 00:01:02,253
+Tatum confirms the wallet on Sui, so it pays, in real Testnet USDC.
+
+13
+00:01:03,267 --> 00:01:05,241
+But Ngozi says that's too high.
+
+14
+00:01:05,241 --> 00:01:07,215
+Diesel should be five, at most.
+
+15
+00:01:07,215 --> 00:01:11,481
+Her own words are saved to Walrus Mainnet, in about twenty seconds.
+
+16
+00:01:11,481 --> 00:01:16,129
+Same request again, and this time it asks, quoting her limit back to her.
+
+17
+00:01:19,267 --> 00:01:20,540
+A new pharmacy wallet.
+
+18
+00:01:20,540 --> 00:01:23,607
+It has never seen it, so it asks instead of guessing.
+
+19
+00:01:23,607 --> 00:01:27,484
+Ngozi approves it, and her answer is saved to Walrus for next time.
+
+20
+00:01:29,067 --> 00:01:33,290
+Now a message that says urgent, account changed, sixty USDC.
+
+21
+00:01:33,290 --> 00:01:36,528
+Text in a request can never approve a payment.
+
+22
+00:01:36,528 --> 00:01:37,583
+Only Ngozi can.
+
+23
+00:01:39,567 --> 00:01:42,915
+And if Tatum's check can't run, the agent can't verify the wallet.
+
+24
+00:01:42,915 --> 00:01:43,828
+So no money moves.
+
+25
+00:01:47,567 --> 00:01:49,473
+Every number is in the repo.
+
+26
+00:01:49,473 --> 00:01:52,945
+A live judge run: eight of eight steps as expected.
+
+27
+00:01:52,945 --> 00:01:55,328
+Fifteen memories on Walrus Mainnet.
+
+28
+00:01:55,328 --> 00:02:01,592
+And in a month we scripted, thirty requests, a simple spending cap made nine wrong payments.
+
+29
+00:02:01,592 --> 00:02:08,809
+Ask Me First made none, and asked Ngozi thirteen questions, against twenty-three with memory switched off.
+
+30
+00:02:09,900 --> 00:02:10,753
+Ask Me First.
+
+31
+00:02:10,753 --> 00:02:13,838
+It pays what's normal, and asks about the rest.

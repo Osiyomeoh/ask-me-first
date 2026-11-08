@@ -1,0 +1,11 @@
+voices Narrator=Sulafat
+base narrator of a short tech demo film; a warm, clear, professional Nigerian (Lagos) woman, natural educated Nigerian English accent, not exaggerated
+Narrator | warm, calm storytelling, a little tender | Ngozi is a nurse in Manchester. Her mother lives in Lagos, looked after by a carer, Bisi. Ngozi pays for the diesel, the medicine, and the odd emergency, usually from a hospital ward, between patients. Ngozi is a composite character, but the problem is real. A flat spending limit either blocks what Mum really needs, or lets a scam straight through.
+Narrator | clear, confident, warm | Ask Me First is an agent that pays the usual bills, asks about anything unusual, and remembers every answer on Walrus Memory, on Mainnet. So it never asks the same question twice.
+Narrator | clear product demo, steady pace | This is the live app. Memory on Walrus Mainnet, wallet checks through Tatum's Sui gRPC, and real Testnet USDC. Bisi asks for diesel, six USDC. The agent recalls that Ngozi approved Bisi, and that diesel cost six last month. Tatum confirms the wallet on Sui, so it pays, in real Testnet USDC.
+Narrator | clear, a small smile on the second sentence | But Ngozi says that's too high. Diesel should be five, at most. Her own words are saved to Walrus Mainnet, in about twenty seconds. Same request again, and this time it asks, quoting her limit back to her.
+Narrator | clear, steady | A new pharmacy wallet. It has never seen it, so it asks instead of guessing. Ngozi approves it, and her answer is saved to Walrus for next time.
+Narrator | firm and serious | Now a message that says urgent, account changed, sixty USDC. Text in a request can never approve a payment. Only Ngozi can.
+Narrator | calm, reassuring | And if Tatum's check can't run, the agent can't verify the wallet. So no money moves.
+Narrator | clear, proud but measured, steady pace for the numbers | Every number is in the repo. A live judge run: eight of eight steps as expected. Fifteen memories on Walrus Mainnet. And in a month we scripted, thirty requests, a simple spending cap made nine wrong payments. Ask Me First made none, and asked Ngozi thirteen questions, against twenty-three with memory switched off.
+Narrator | warm, closing line, slow | Ask Me First. It pays what's normal, and asks about the rest.

@@ -4,7 +4,7 @@ Open **/judge** and click the four steps in order: about three minutes, no keys 
 
 An agent that pays the usual bills for a family abroad, asks about anything unusual, and remembers every answer on **Walrus Mainnet**, so it never asks twice. Wallet checks go through **Tatum's Sui gRPC**; payments settle in USDC on **Sui Testnet**.
 
-Built for Total Recall (Tatum x Walrus Memory).
+Built for Total Recall (Tatum x Walrus Memory). Demo video: https://youtu.be/Z_zV-chYXuE
 
 ## The story
 

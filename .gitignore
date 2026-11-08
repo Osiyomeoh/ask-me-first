@@ -8,3 +8,15 @@ dist
 *.log
 !spike/kill-test.log
 dist/
+video/node_modules
+video/build
+video/raw
+video/check
+video/clips
+video/*.mp4
+video/voice/*.mp3
+video/package-lock.json
+video/models
+video/thumbs
+video/voice/*.wav
+video/voice/ng
